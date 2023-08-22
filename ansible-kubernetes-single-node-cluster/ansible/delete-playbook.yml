@@ -1,0 +1,7 @@
+---
+
+- hosts: localhost
+  roles:
+  - reset_cluster   # Destroy the Kubernetes Cluster
+  - delete_k8s      # Uninstall K8s packages & remove config files
+  - delete_docker   # Uninstall Docker

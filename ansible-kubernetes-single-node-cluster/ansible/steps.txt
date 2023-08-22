@@ -1,0 +1,13 @@
+ansible install****
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt update
+sudo apt install ansible
+
+*****if you face containerd issue
+$ rm /etc/containerd/config.toml
+$ systemctl restart containerd
+
+ansible-playbook -i /inventory/hosts create-playbook.yml
+ansible-playbook -i /inventory/hosts delete-playbook.yml
+
+

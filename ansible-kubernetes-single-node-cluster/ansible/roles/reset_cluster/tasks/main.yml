@@ -1,0 +1,5 @@
+---
+
+- name: Remove Kubernetes configs
+  shell: sudo yes | kubeadm reset --ignore-preflight-errors=all  
+  ignore_errors: yes
